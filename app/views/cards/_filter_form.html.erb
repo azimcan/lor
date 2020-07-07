@@ -1,0 +1,67 @@
+<%= form_tag cards_path, remote: true, method: 'get' do %>
+  <div class="form-group">
+		<h5>REGIONS</h5>
+	  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+	  	<label class="btn btn-info">
+				<%= check_box_tag "regions[]", "Piltover & Zaun" %> Piltover & Zaun
+		  </label>
+
+		  <label class="btn btn-info">
+				<%= check_box_tag "regions[]", "Shadow Isles" %> Shadow Isles
+		  </label>
+
+		  <label class="btn btn-info">
+				<%= check_box_tag "regions[]", "Noxus" %> Noxus
+		  </label>
+
+		  <label class="btn btn-info">
+				<%= check_box_tag "regions[]", "Demacia" %> Demacia
+		  </label>
+
+		  <label class="btn btn-info">
+				<%= check_box_tag "regions[]", "Ionia" %> Ionia
+		  </label>
+
+		  <label class="btn btn-info">
+				<%= check_box_tag "regions[]", "Bilgewater" %> Bilgewater
+		  </label>
+
+		  <label class="btn btn-info">
+				<%= check_box_tag "regions[]", "Freljord" %> Freljord
+		  </label>
+	  </div>
+	</div>
+
+  <div class="form-group">
+  	<h5>TYPES</h5>
+	  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+	  	<label class="btn btn-info">
+				<%= radio_button_tag "type", "Unit" %> Unit
+		  </label>
+
+		  <label class="btn btn-info">
+				<%= radio_button_tag "type", "Spell" %> Spell
+		  </label>
+	  </div>
+		<%= link_to "Clear", beats_path %> 	
+  </div>
+
+  <div class="form-group">
+  	<h5>COSTS</h5>
+	  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+	  	<% costs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]  %>
+	  	<% costs.delete(11) %>
+	  	<% costs.each do |cost| %>
+		  	<label class="btn btn-info">
+	        <%= check_box_tag "costs[]", cost %> <%= cost %>
+			  </label>
+      <% end %>
+
+	  </div>
+  </div>
+	
+	<div class="d-flex justify-content-end">
+		<%= submit_tag "Filter", class: 'btn btn-outline-info'%>
+	</div>
+
+<% end %>

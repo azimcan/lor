@@ -1,0 +1,9 @@
+<% unless cards.nil? %>
+	<% cards.each do |card| %>
+		<div class="col-3" style="height:auto;width:auto;">
+			<%= image_tag "cards/#{card.cardCode}.png", size: 'height:auto;width:auto;', class: 'card-img-top', alt: "#{card.cardCode}"%>
+		</div>
+	<% end %>
+<% else %>
+	<p class="text-light">Eslesen kart yok</p>
+<% end %>

@@ -1,0 +1,8 @@
+<%= form_tag cards_path, remote: true, method: 'get' do %>
+	<div class="input-group">
+		<%= text_field_tag :search, params[:search], class: 'form-control',  placeholder: "Search", "aria-label": "Search" %>
+		<div class="input-group-append">
+			<%= submit_tag "Search", class: 'btn btn-outline-info' %>
+		</div>
+	</div>
+<% end %>

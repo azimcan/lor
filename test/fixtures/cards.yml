@@ -1,0 +1,59 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  associatedCards: MyString
+  associatedCardRefs: MyString
+  assets: MyString
+  region: MyString
+  regionRef: MyString
+  attack: MyString
+  cost: MyString
+  health: MyString
+  description: MyString
+  descriptionRaw: MyString
+  levelupDescription: MyString
+  levelupDescriptionRaw: MyString
+  flavorText: MyString
+  artistName: MyString
+  name: MyString
+  cardCode: MyString
+  keywords: MyString
+  keywordRefs: MyString
+  spellSpeed: MyString
+  spellSpeedRef: MyString
+  rarity: MyString
+  rarityRef: MyString
+  subtype: MyString
+  subtypes: MyString
+  supertype: MyString
+  type: 
+  collectible: MyString
+
+two:
+  associatedCards: MyString
+  associatedCardRefs: MyString
+  assets: MyString
+  region: MyString
+  regionRef: MyString
+  attack: MyString
+  cost: MyString
+  health: MyString
+  description: MyString
+  descriptionRaw: MyString
+  levelupDescription: MyString
+  levelupDescriptionRaw: MyString
+  flavorText: MyString
+  artistName: MyString
+  name: MyString
+  cardCode: MyString
+  keywords: MyString
+  keywordRefs: MyString
+  spellSpeed: MyString
+  spellSpeedRef: MyString
+  rarity: MyString
+  rarityRef: MyString
+  subtype: MyString
+  subtypes: MyString
+  supertype: MyString
+  type: 
+  collectible: MyString

@@ -1,0 +1,7 @@
+$("#cards").children().fadeOut("300", function() {
+	$(this).remove();
+});
+
+$("#cards").fadeIn("300", function() {
+	$(this).append("<%= j render 'cards', cards: @cards %>");
+});
