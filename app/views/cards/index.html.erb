@@ -10,7 +10,7 @@
 	<div class="row pt-3" id="cards">
 		<% @cards.each do |card| %>
 			<div class="col-3" style="height:auto;width:auto;">
-				<%= image_tag "#{card.gameAbsolutePath}", size: 'height:auto;width:auto;', class: 'card-img-top', alt: "#{card.cardCode}"%>
+				<%= image_tag "#{card.gameAbsolutePath.insert(4, "s")}", size: 'height:auto;width:auto;', class: 'card-img-top', alt: "#{card.cardCode}"%>
 			</div>
 		<% end %>
 	</div>
