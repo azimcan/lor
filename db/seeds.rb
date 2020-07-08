@@ -5,7 +5,8 @@ puts "START"
 if Card.delete_all
 	puts "Table deleted."
 end
-path = "/home/azimcan/git/Projects/LOR Deck Builder/set1-en_us/en_us/data/set1-en_us.json"
+
+path = Rails.root.join("app/assets/data/set1-en_us.json")
 
 cards = ""
 File.open(path, "r") do |file|
@@ -25,7 +26,7 @@ cards.each do |card|
 	end
 end
 
-path = "/home/azimcan/git/Projects/LOR Deck Builder/set2-en_us/en_us/data/set2-en_us.json"
+path = Rails.root.join("app/assets/data/set2-en_us.json")
 
 cards = ""
 File.open(path, "r") do |file|
