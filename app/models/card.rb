@@ -50,7 +50,7 @@ class Card < ApplicationRecord
 		unless list.empty?
 			query.each do |column|
 				list.each do |word|
-	    		result = result | self.where("collectible = ? AND #{column} LIKE ?","t", "%#{word}%")
+	    		result = result | self.where("collectible = ? AND \"#{column}\"" LIKE ?","t", "%#{word}%")
 	    	end
 			end
 		else
